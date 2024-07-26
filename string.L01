@@ -1,0 +1,15 @@
+// Напишите программу, которая считывает два целых неотрицательных числа, разделённых пробелом. Программа должна вычислить их сумму S и вывести произведение S на количество цифр в десятичной записи S.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int first, second = 0;
+    cin >> first >> second;
+    int S = first + second;
+    string string_S = to_string(S);
+    int finalS = S * string_S.size();
+    cout << finalS << endl;
+}
